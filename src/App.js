@@ -97,26 +97,18 @@ export default function App() {
           <Typography variant="h6" color="inherit" noWrap>
             Enjoy Our New Site
           </Typography>
-          <Drawer
-            anchor="right"
-            open={cartOpen}
-            onClose={() => setCartOpen(false)}
-          >
-            <Cart
-              cartItems={cartItems}
-              addToCart={handleAddToCart}
-              removeFromCart={handleRemoveFromCart}
-            />
-          </Drawer>
-
-          <Button onClick={() => setCartOpen(true)}>
-            <Badge badgeContent={getTotalItems(cartItems)} color="error">
-              <AddShoppingCart />
-            </Badge>
-          </Button>
         </Toolbar>
       </AppBar>
-      <Drawer anchor="right" open={cartOpen} onClose={() => setCartOpen(false)}>
+      <Drawer
+        PaperProps={{
+          sx: {
+            width: 540,
+          },
+        }}
+        anchor="right"
+        open={cartOpen}
+        onClose={() => setCartOpen(false)}
+      >
         <Cart
           cartItems={cartItems}
           addToCart={handleAddToCart}

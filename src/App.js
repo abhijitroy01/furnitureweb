@@ -9,7 +9,6 @@ import CardContent from "@mui/material/CardContent";
 import { AddShoppingCart } from "@mui/icons-material";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
-import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -95,7 +94,7 @@ export default function App() {
       <AppBar position="relative">
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            Enjoy Our New Site
+            Any Company, All Furniture!
           </Typography>
         </Toolbar>
       </AppBar>
@@ -138,7 +137,7 @@ export default function App() {
               color="text.primary"
               gutterBottom
             >
-              Welcome
+              Welcome Shopper
             </Typography>
             <Typography
               variant="h5"
@@ -190,7 +189,7 @@ export default function App() {
       {/* Footer */}
       <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          Contact Us
         </Typography>
         <Typography
           variant="subtitle1"
@@ -198,9 +197,8 @@ export default function App() {
           color="text.secondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+          Ph: 1-888-888-8888 email: help@anycompany.com
         </Typography>
-        <Copyright />
       </Box>
       {/* End footer */}
     </ThemeProvider>
